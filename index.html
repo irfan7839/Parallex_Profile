@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Profile</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <header>
+        <!-- <a href="#" class="pic">Profile</a> -->
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+    </header>
+    <section>
+        <img src="picc.png" class="background" id="background">
+        <img src="think-about-coding-qlib86o7bz1fqbub.png" class="forground" id="forground">
+        <h2 id="text">Profile</h2>
+    </section>
+    <div class="sec">
+        <div class="nav" style="margin: 20px;">
+        <h2 class="about" id="about">About Me</h2><br>
+    </div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptatem cum enim illum eligendi nemo
+            tenetur fugiat quidem iusto ad. Consequatur similique assumenda molestiae, corrupti voluptates, tempore
+            soluta expedita placeat ratione optio illo impedit, quod distinctio omnis corporis culpa. Ullam itaque,
+            ur, harum at ut inventore cumque, possimus praesentium aut suscipit earum aperiam
+            ur distinctio deserunt enim nisi illo ratione harum nulla, debitis
+            similique temporibus officia ipsa non perspiciatis beatae error quasi nihil quas ea vel repellendus
+            laboriosam? excepturi autem possimus perspiciatis non quibusdam. Rerum a minus veniam animi in! Veniam
+            minima praesentium vero quis at maiores commodi corporis iure eius sequi? Ut eum quis ullam repudiandae
+            adipisci architecto earum, nostrum fuga expedita eaque? Atque quod voluptatibus voluptatum?</p>
+            <div class="nav" style="margin: 20px;">
+                <h2 class="project" id="project">Project</h2><br>
+            </div>
+            <div class="container" >
+                <div class="row">
+                  <div class="col-sm" style="display:block;width:40px;height:180px;border:1px solid black;margin: 5px;">
+                    <a href="#">Project1</a>
+                  </div>
+                  <div class="col-sm" style="display:block;width:40px;height:180px;border:1px solid black;margin: 5px;">
+                    One of three columns
+                  </div>
+                  <div class="col-sm" style="display:block;width:40px;height:180px;border:1px solid black;margin: 5px;">
+                    One of three columns
+                  </div>
+                </div>
+              </div>
+                    <div class="nav" style="margin: 20px;">
+                        <h2 class="contact" id="contact">Contact</h2><br>
+                    </div>
+                    <form>
+                        <div class="form-group">
+                          <label for="exampleFormControlInput1">Name</label>
+                          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Phone Number</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="999999999">
+                          </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlTextarea1">Message</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <input type="submit" value="submit">
+                      </form>
+    </div>
+    <script >
+        let back = document.getElementById('background')
+        const text = document.getElementById('text')
+        const front = document.getElementById('forground')
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY
+            text.style.marginRight = value * 1.5 + 'px'
+            front.style.marginLeft = value * 1.5 + 'px'
+            // back.style.top = value * 1.25 + 'px'
+        })
+    </script>
+</body>
+
+</html>
